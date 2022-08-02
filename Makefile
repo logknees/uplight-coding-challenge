@@ -10,6 +10,9 @@ stop:
 refresh:
 	docker stop uplight.api && docker start uplight.api
 
+serve:
+	xdg-open http://localhost:56733
+
 shell:
 	docker exec -it uplight.api bash
 
