@@ -14,8 +14,6 @@ def token():
         return render_template('home.html')
     if request.method == 'POST':
         obj = {}
-        print('data', request.data)
-        print('form', request.form)
         if request.data:
             obj = json.loads(request.data)
         elif request.form:
